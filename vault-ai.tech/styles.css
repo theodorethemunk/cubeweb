@@ -1,0 +1,36 @@
+
+.preloader {
+    position: relative;
+}
+
+.ice-cube {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 5px solid #b3e0ff;
+    border-radius: 5px;
+    animation: fall 2s ease-in-out infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(200px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(400px) rotate(360deg);
+    }
+}
+
+.ice-cube:nth-child(2) {
+    left: 80px;
+    animation-delay: 0.3s;
+}
+
+.ice-cube:nth-child(3) {
+    left: 160px;
+    animation-delay: 0.6s;
+}
